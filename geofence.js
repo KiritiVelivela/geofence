@@ -40,6 +40,7 @@ https.get(url, res => {
         {latitude: 17.809605, longitude: 83.387557},
         500
       );
+      console.log("heyyy");
   });
 });
 }, 5*1000);
