@@ -1,0 +1,16 @@
+{
+  "name": "Geofence",
+  "version": "1.0.0",
+  "description": "geofence api can be used across any application.",
+  "main": "geofence.js",
+  "scripts": {
+    "start": "node geofence.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kiriti Velivela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.8",
+    "geolib": "2.0.24"
+  }
+}
