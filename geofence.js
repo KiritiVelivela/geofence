@@ -46,7 +46,7 @@ https.get(url, res => {
 
 
  app.get('/', function(req, res) {
-     res.json(check);
+     res.json({insideradius: check, enterorexit: "yet to be known" });
  });
  app.listen(port, function() {
      console.log('Our app is running on http://localhost:' + port);
