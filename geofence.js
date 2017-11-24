@@ -38,11 +38,11 @@ https.get(url, res => {
       check = geolib.isPointInCircle(
         {latitude: lat, longitude: long},
         {latitude: 17.809605, longitude: 83.387557},
-        5000
+        1000
       );
   });
 });
-}, 10*1000);
+}, 5*1000);
 
 
  app.get('/', function(req, res) {
