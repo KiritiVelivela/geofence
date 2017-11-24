@@ -33,12 +33,12 @@ https.get(url, res => {
       console.log(geolib.isPointInCircle(
         {latitude: lat, longitude: long},
         {latitude: 17.809605, longitude: 83.387557},
-        5000
+        500
       ));
       check = geolib.isPointInCircle(
         {latitude: lat, longitude: long},
         {latitude: 17.809605, longitude: 83.387557},
-        1000
+        500
       );
   });
 });
