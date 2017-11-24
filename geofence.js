@@ -32,12 +32,12 @@ https.get(url, res => {
       // checks if 51.525, 7.4575 is within a radius of 5km from 51.5175, 7.4678
       console.log(geolib.isPointInCircle(
         {latitude: lat, longitude: long},
-        {latitude: 51.5175, longitude: 7.4678},
+        {latitude: 17.809605, longitude: 83.387557},
         5000
       ));
       check = geolib.isPointInCircle(
         {latitude: lat, longitude: long},
-        {latitude: 51.5175, longitude: 7.4678},
+        {latitude: 17.809605, longitude: 83.387557},
         5000
       );
   });
