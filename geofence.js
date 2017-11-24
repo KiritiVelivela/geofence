@@ -5,7 +5,7 @@ var express = require('express');
  var app = express();
 
 var check;
-const PORT = "3333";
+var port = process.env.PORT || 3333;
 const url =
   "http://test.peelabus.com/WebService.asmx/LiveTracking";
   setInterval(function(){
@@ -45,10 +45,12 @@ https.get(url, res => {
 }, 10*1000);
 
 
- app.post('/', function(req, res) {
+ app.get('/', function(req, res) {
      res.json(check);
  });
- app.listen(PORT);
+ app.listen(port, function() {
+     console.log('Our app is running on http://localhost:' + port);
+ });
 // geo() {
 //   geolib.isPointInCircle(
 //     {latitude: 51.525, longitude: 7.4575},
